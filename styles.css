@@ -7,10 +7,22 @@
     font-size: 2rem;
 }
 
+.btn-primary,
+#submitButton {
+  background-color: #5f6f52; /* Change to the desired color */
+  border-color: #5f6f52; /* Optional: Change border color if needed */
+
+  &:hover {
+    color: #333;
+    background-color: #f6f9fc; /* Change to the desired color */
+    border-color: #f6f9fc;
+  }
+}
+
 .masthead {
-    background-image: url(./assets/background.png);
+    background-image: url(./assets/background.webp);
     background-size: cover;
-    background-position: center;
+    background-position: center 15%;
     background-repeat: no-repeat;
     height: 100vh;
   }
@@ -33,6 +45,10 @@
     height: auto;
     display: block;
   }
+
+hr {
+  color: #F7F7F7;
+}
   
   .logo-footer {
     max-width: 100px;
