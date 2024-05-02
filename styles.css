@@ -47,6 +47,20 @@ body {
   height: auto;
 }
 
+.shop-banner {
+  background-image: url(./assets/banner-2.jpg);
+  background-size: c;
+  background-position: top;
+  background-repeat: repeat;
+  min-height: 300px; /* Set minimum height */
+  width: 100%; /* Ensure full width */
+}
+
+.about-banner {
+  height: 100vh !important;
+}
+
+
 .showcase {
   display: flex;
   justify-content: center;
