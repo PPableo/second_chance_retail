@@ -27,7 +27,7 @@ Downloading the Project:
 Here are the steps necessary on how to run the repo locally on your machine:
 
 Clone the repository from GitHub using the following command:
-git clone https://github.com/PaulPableoSectionC/final_project_sectionC.git
+git clone https://ppableo.github.io/second_chance_retail/"
 
 Here are the npm dependencies to install: 
 
