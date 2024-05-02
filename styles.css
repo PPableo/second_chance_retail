@@ -1,16 +1,21 @@
+body {
+  font-family: "Anton", sans-serif;
+  font-style: italic;
+}
+
 .feature {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-    width: 4rem;
-    font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2rem;
 }
 
 .btn-primary,
 #submitButton {
-  background-color: #5f6f52; /* Change to the desired color */
-  border-color: #5f6f52; /* Optional: Change border color if needed */
+  background-color: #212529; /* Change to the desired color */
+  border-color: #212529; /* Optional: Change border color if needed */
 
   &:hover {
     color: #333;
@@ -20,36 +25,110 @@
 }
 
 .masthead {
-    background-image: url(./assets/background.webp);
-    background-size: cover;
-    background-position: center 15%;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
+  background-image: url(./assets/background.webp);
+  background-size: cover;
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
-  .navbar {
-    background-color: #F7F7F7;
+.banner {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-img {
+  position: relative;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.showcase-img img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Preserve aspect ratio */
+}
+
+.showcase-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-text h1 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.showcase-text a {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+@media (min-width: 992px) {
+  .showcase-img {
+    min-height: 400px; /* Set a minimum height for larger screens */
   }
-  
-  .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    overflow: hidden; /* Ensure the image is clipped to the circle */
-  }
-  
-  .logo-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(
+    1.5rem,
+    4vw,
+    2.5rem
+  ); /* Adjust min and max values as needed */
+}
+
+.navbar {
+  font-size: clamp(1rem, 3vw, 2rem);
+  background-color: #f7f7f7;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  overflow: hidden; /* Ensure the image is clipped to the circle */
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.bi {
+  color: #f7f7f7;
+}
 
 hr {
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
-  
+
+/* Footer */
+
+footer {
+
   .logo-footer {
     max-width: 100px;
     height: auto;
@@ -82,25 +161,23 @@ hr {
       }
     }
   }
-  
-  /* Responsive styles */
-  @media (max-width: 991.98px) {
-    .logo-container {
-      width: 50px;
-      height: 50px;
-    }
+
+}
+
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+  .logo-container {
+    width: 50px;
+    height: 50px;
   }
-  
-  @media (max-width: 768px) {
-    .mobile-details {
-      display: block;
-    }
-    .login-div {
-      width: 80% !important;
-    }
+}
+
+@media (max-width: 768px) {
+  .mobile-details {
+    display: block;
   }
-  
-  /* .nav-item{
-      background-color: rgba(0,0,0,0.3);
-  
-  } */
+  .login-div {
+    width: 80% !important;
+  }
+}
